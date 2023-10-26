@@ -45,7 +45,7 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     topic = msg.topic
     payload = msg.payload.decode()
-    print(f"Received `{payload}` from `{topic}` topic")
+    # print(f"Received `{payload}` from `{topic}` topic")
     if "energy" in topic:
         energy_etl.power_receive(topic, payload)
 
@@ -62,20 +62,22 @@ def on_disconnect(userdata, rc, props):
 
 
 def subscribe(client: mqtt_client, topic: str):
+    print("Subscribe topic: ", topic)
     client.subscribe(topic)
+    client.on_message = on_message
 
 
-def run():
+def mqtt_initialize():
     # subscribe client
     global sub_client
-    sub_client = mqtt_client.Client(sub_client_id)
+    sub_client = mqtt_client.Client(sub_client_id, transport="websockets")
     sub_client.on_connect = on_connect
     sub_client.on_disconnect = on_disconnect
     sub_client.on_message = on_message
 
     # publish client
     global pub_client
-    pub_client = mqtt_client.Client(pub_client_id)
+    pub_client = mqtt_client.Client(pub_client_id, transport="websockets")
     pub_client.on_connect = on_connect
     pub_client.on_disconnect = on_disconnect
 
@@ -95,12 +97,12 @@ def run():
 
 @app.task("every 10 seconds")
 def publish_mqtt():
-    print("publish_mqtt")
-    energy_etl.publish_sum_power(pub_client)
+    energy_etl.publish_sum_power_m()
+    energy_etl.publish_sum_power_l()
 
 
 if __name__ == "__main__":
-    run()
+    mqtt_initialize()
     app.run()
     # try:
     #     while True:

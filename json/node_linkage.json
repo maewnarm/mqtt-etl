@@ -1,9 +1,454 @@
 {
   "manufacturing": {
-    "Alternator Product": [1, 2, 3, 4, 5, 6],
-    "Starter Product": [7, 8, 9, 10]
+    "Part_Manufacturing_1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+    "Part_Manufacturing_2": [25, 26, 27, 28, 42, 43],
+    "Alternator_Product": [
+      24, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 47, 48, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61
+    ],
+    "Starter_Product": [
+      93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116,
+      117
+    ],
+    "ECC_ABS_and_Asmo_Product": [44, 45, 46]
   },
   "line": {
-    "Alternator assy 3rd": [3, 6]
+    "Stamping Progressive 200, 300 ton": [11],
+    "Stamping 60, 45, 25, 10 ton": [14],
+    "Stamping Progressive 150 ton": [10, 12],
+    "Washing 1": [13],
+    "Stamp 4 Stator Core K1, K3, G3": [15],
+    "Stamp 4 Stator Core SE08 2nd Line": [1, 2, 16],
+    "Stamp 4 Stator Core CSC0 3rd Line": [3, 4, 5, 6],
+    "Alternator SE08 Pole Core 1/N": [7, 8, 9],
+    "PEM Transfer Cold Forging 250 ton": [20],
+    "PEM Parts Former": [21],
+    "PEM Transfer Warm Forging 2000 ton": [17, 18, 19, 22, 23],
+
+    "Alternator Frame End Rear Lathing SE08 Type": [25, 26],
+    "Alternator Frame Drive End Lathing SE08 Type": [27, 28],
+    "Alternator Shaft Rotor SE0 type": [42, 43],
+
+    "Alternator Assy SE08 Type (2nd Line)": [49],
+    "Alternator Assy SE08 Type (3rd Line)": [48],
+    "Alternator Rectifier S/A SE Type (2nd Line)": [50],
+    "Alternator Rectifier Sub Assy SE08B, CE2, SE0 (3rd Line)": [47],
+    "Alternator Coil Sub Assy": [24],
+    "Alternator Rotor Assy SE Type (2nd Line)": [55, 56, 57, 58],
+    "Alternator Rotor Assy SE Type (3rd Line)": [37, 38, 39, 60, 61],
+    "Alternator Slip Ring Sub Assy SE Type": [59],
+    "Alternator Slip Ring S/A SE Type (2nd Line)": [52],
+    "Alternator Stator Assy SE Type": [29, 30, 31, 32, 33, 34, 53, 54],
+    "Alternator Stator Assy SE08 type": [35, 36, 40],
+    "Alternator 4th Stator Line CE2": [41],
+
+    "Starter RA2.0 Magnetic Switch: P, GA Type": [93],
+    "Starter Assy RA2.0, R2.2 Type": [94],
+    "Starter Assy General Type": [95],
+    "Starter Assy R 5.0 Type (R-Large)": [96],
+    "Starter Magnetic Switch R2.7 Type": [97],
+    "Starter Assy PA70 Type": [98],
+    "Starter Clutch S/A, W/Bearing PA70 Type": [99],
+    "Starter Clutch S/A, PA PA70 Type": [100],
+    "Starter Yoke Assy PA70 Type": [101],
+    "Starter Brush Holder PA70 Type": [102],
+    "Starter Magnetic Switch PA70": [103],
+    "Starter RA2.0 Magnetic Swicth: RA2.0, R2.2 Type": [104],
+    "Starter Armature PA70LL, G Type": [105],
+    "Starter Armature PA70L, RA2.0, R2.2, P Type": [106],
+    "Starter Armature R-Large, PA90L, R2.7, RA90S Type": [107],
+    "Starter Shaft Armature PA70L, P Type": [108],
+    "Starter Shaft Armature PA70 LL, P Type": [109],
+    "Starter Shaft Armature R4.0, PA90L, R2.2, RA2.0 Type": [110],
+    "Starter Commutator S/A R2.2": [111],
+    "Starter Core Sub Assy, Armature": [112],
+    "Starter Shaft Armature R type": [113],
+    "Starter Clutch Sub Assy RA Type": [114],
+    "Starter Clutch Sub Assy GA, P, P0.8, ISS Type": [115],
+    "Starter Bearing Sub Assy P Type": [116],
+    "Starter Sub Clutch W/Housing & Clutch S/A R-Large, R2.7 Type": [117],
+
+    "SE Regulator Sub Assy Line": [46],
+    "SE Regulator Assy 1st Line": [44],
+    "SE Regulator Assy 2nd Line": [45]
+  },
+  "lineCode": {
+    "Y301": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414111",
+      "line_name": "Stamping Progressive 200, 300 ton",
+      "line_id": "21",
+      "node_id": [11]
+    },
+    "Y302": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414111",
+      "line_name": "Stamping 60, 45, 25, 10 ton",
+      "line_id": "22",
+      "node_id": [14]
+    },
+    "Y309": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414111",
+      "line_name": "Stamping Progressive 150 ton",
+      "line_id": "23",
+      "node_id": [10, 12]
+    },
+    "Y216": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414141",
+      "line_name": "Washing 1",
+      "line_id": "25",
+      "node_id": [13]
+    },
+    "Y306": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414114",
+      "line_name": "Stamp 4 Stator Core K1, K3, G3",
+      "line_id": "28",
+      "node_id": [15]
+    },
+    "Y312": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414114",
+      "line_name": "Stamp 4 Stator Core SE08 2nd Line",
+      "line_id": "30",
+      "node_id": [1, 2, 16]
+    },
+    "Y313": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414114",
+      "line_name": "Stamp 4 Stator Core CSC0 3rd Line",
+      "line_id": "31",
+      "node_id": [3, 4, 5, 6]
+    },
+    "Y266": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414156",
+      "line_name": "Alternator SE08 Pole Core 1/N",
+      "line_id": "40",
+      "node_id": [7, 8, 9]
+    },
+    "Y272": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414131",
+      "line_name": "PEM Transfer Cold Forging 250 ton",
+      "line_id": "42",
+      "node_id": [20]
+    },
+    "Y256": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414131",
+      "line_name": "PEM Parts Former",
+      "line_id": "44",
+      "node_id": [21]
+    },
+    "Y258": {
+      "manufacturing_name": "Part_Manufacturing_1",
+      "section_code": "414136",
+      "line_name": "PEM Transfer Warm Forging 2000 ton",
+      "line_id": "47",
+      "node_id": [17, 18, 19, 22, 23]
+    },
+    "Y228": {
+      "manufacturing_name": "Part_Manufacturing_2",
+      "section_code": "414270",
+      "line_name": "Alternator Frame End Rear Lathing SE08 Type",
+      "line_id": "70",
+      "node_id": [25, 26]
+    },
+    "Y229": {
+      "manufacturing_name": "Part_Manufacturing_2",
+      "section_code": "414270",
+      "line_name": "Alternator Frame Drive End Lathing SE08 Type",
+      "line_id": "71",
+      "node_id": [27, 28]
+    },
+    "Y361": {
+      "manufacturing_name": "Part_Manufacturing_2",
+      "section_code": "414122",
+      "line_name": "Alternator Shaft Rotor SE0 type",
+      "line_id": "72",
+      "node_id": [42, 43]
+    },
+    "A104": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414463",
+      "line_name": "Alternator Assy SE08 Type (2nd Line)",
+      "line_id": "79",
+      "node_id": [49]
+    },
+    "A105": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414464",
+      "line_name": "Alternator Assy SE08 Type (3rd Line)",
+      "line_id": "81",
+      "node_id": [48]
+    },
+    "A215": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414274",
+      "line_name": "Alternator Rectifier S/A SE Type (2nd Line)",
+      "line_id": "83",
+      "node_id": [50]
+    },
+    "A219": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414268",
+      "line_name": "Alternator Rectifier Sub Assy SE08B, CE2, SE0 (3rd Line)",
+      "line_id": "84",
+      "node_id": [47]
+    },
+    "A221": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414267",
+      "line_name": "Alternator Coil Sub Assy",
+      "line_id": "85",
+      "node_id": [24]
+    },
+    "A214": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414273",
+      "line_name": "Alternator Rotor Assy SE Type (2nd Line)",
+      "line_id": "86",
+      "node_id": [55, 56, 57, 58]
+    },
+    "A218": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414277",
+      "line_name": "Alternator Rotor Assy SE Type (3rd Line)",
+      "line_id": "87",
+      "node_id": [37, 38, 39, 60, 61]
+    },
+    "A209": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414271",
+      "line_name": "Alternator Slip Ring Sub Assy SE Type",
+      "line_id": "88",
+      "node_id": [59]
+    },
+    "A217": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414276",
+      "line_name": "Alternator Slip Ring S/A SE Type (2nd Line)",
+      "line_id": "89",
+      "node_id": [52]
+    },
+    "A213": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414272",
+      "line_name": "Alternator Stator Assy SE Type",
+      "line_id": "90",
+      "node_id": [29, 30, 31, 32, 33, 34, 53, 54]
+    },
+    "A220": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414290",
+      "line_name": "Alternator Stator Assy SE08 type",
+      "line_id": "91",
+      "node_id": [35, 36, 40]
+    },
+    "A222": {
+      "manufacturing_name": "Alternator_Product",
+      "section_code": "414291",
+      "line_name": "Alternator 4th Stator Line CE2",
+      "line_id": "92",
+      "node_id": [41]
+    },
+    "S200": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414251",
+      "line_name": "Starter RA2.0 Magnetic Switch: P, GA Type",
+      "line_id": "93",
+      "node_id": [93]
+    },
+    "S101": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414451",
+      "line_name": "Starter Assy RA2.0, R2.2 Type",
+      "line_id": "94",
+      "node_id": [94]
+    },
+    "S100": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414452",
+      "line_name": "Starter Assy General Type",
+      "line_id": "95",
+      "node_id": [95]
+    },
+    "S102": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414453",
+      "line_name": "Starter Assy R 5.0 Type (R-Large)",
+      "line_id": "96",
+      "node_id": [96]
+    },
+    "S203": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414260",
+      "line_name": "Starter Magnetic Switch R2.7 Type",
+      "line_id": "97",
+      "node_id": [97]
+    },
+    "S103": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414454",
+      "line_name": "Starter Assy PA70 Type",
+      "line_id": "98",
+      "node_id": [98]
+    },
+    "S255": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414280",
+      "line_name": "Starter Clutch S/A, W/Bearing PA70 Type",
+      "line_id": "99",
+      "node_id": [99]
+    },
+    "S254": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414280",
+      "line_name": "Starter Clutch S/A, PA PA70 Type",
+      "line_id": "100",
+      "node_id": [100]
+    },
+    "S212": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414281",
+      "line_name": "Starter Yoke Assy PA70 Type",
+      "line_id": "101",
+      "node_id": [101]
+    },
+    "S222": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414282",
+      "line_name": "Starter Brush Holder PA70 Type",
+      "line_id": "102",
+      "node_id": [102]
+    },
+    "S202": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414259",
+      "line_name": "Starter Magnetic Switch PA70",
+      "line_id": "103",
+      "node_id": [103]
+    },
+    "S201": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414253",
+      "line_name": "Starter RA2.0 Magnetic Swicth: RA2.0, R2.2 Type",
+      "line_id": "104",
+      "node_id": [104]
+    },
+    "S231": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414256",
+      "line_name": "Starter Armature PA70LL, G Type",
+      "line_id": "105",
+      "node_id": [105]
+    },
+    "S230": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414256",
+      "line_name": "Starter Armature PA70L, RA2.0, R2.2, P Type",
+      "line_id": "106",
+      "node_id": [106]
+    },
+    "S232": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414286",
+      "line_name": "Starter Armature R-Large, PA90L, R2.7, RA90S Type",
+      "line_id": "107",
+      "node_id": [107]
+    },
+    "Y353": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414120",
+      "line_name": "Starter Shaft Armature PA70L, P Type",
+      "line_id": "108",
+      "node_id": [108]
+    },
+    "Y357": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414120",
+      "line_name": "Starter Shaft Armature PA70 LL, P Type",
+      "line_id": "109",
+      "node_id": [109]
+    },
+    "Y308": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414120",
+      "line_name": "Starter Shaft Armature R4.0, PA90L, R2.2, RA2.0 Type",
+      "line_id": "110",
+      "node_id": [110]
+    },
+    "Y276": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414120",
+      "line_name": "Starter Commutator S/A R2.2",
+      "line_id": "111",
+      "node_id": [111]
+    },
+    "Y354": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414120",
+      "line_name": "Starter Core Sub Assy, Armature",
+      "line_id": "112",
+      "node_id": [112]
+    },
+    "Y360": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414120",
+      "line_name": "Starter Shaft Armature R type",
+      "line_id": "113",
+      "node_id": [113]
+    },
+    "S250": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414254",
+      "line_name": "Starter Clutch Sub Assy RA Type",
+      "line_id": "114",
+      "node_id": [114]
+    },
+    "S251": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414254",
+      "line_name": "Starter Clutch Sub Assy GA, P, P0.8, ISS Type",
+      "line_id": "115",
+      "node_id": [115]
+    },
+    "S252": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414254",
+      "line_name": "Starter Bearing Sub Assy P Type",
+      "line_id": "116",
+      "node_id": [116]
+    },
+    "S253": {
+      "manufacturing_name": "Starter_Product",
+      "section_code": "414254",
+      "line_name": "Starter Sub Clutch W/Housing & Clutch S/A R-Large, R2.7 Type",
+      "line_id": "117",
+      "node_id": [117]
+    },
+    "A202": {
+      "manufacturing_name": "ECC_ABS_and_Asmo_Product",
+      "section_code": "414279",
+      "line_name": "SE Regulator Sub Assy Line",
+      "line_id": "145",
+      "node_id": [46]
+    },
+    "A208": {
+      "manufacturing_name": "ECC_ABS_and_Asmo_Product",
+      "section_code": "414269",
+      "line_name": "SE Regulator Assy 1st Line",
+      "line_id": "146",
+      "node_id": [44]
+    },
+    "A216": {
+      "manufacturing_name": "ECC_ABS_and_Asmo_Product",
+      "section_code": "414275",
+      "line_name": "SE Regulator Assy 2nd Line",
+      "line_id": "147",
+      "node_id": [45]
+    }
   }
 }
