@@ -53,7 +53,6 @@ class Energy_ETL:
                     self.manu[key][idx] = float(data["value"])
 
     def _filter_line(self, data: Any):
-        # line_node = self.linkage["line"]
         line_code = self.linkage["lineCode"]
         node = int(data["node_id"])
         for key, line_data in line_code.items():
@@ -90,7 +89,7 @@ class Energy_ETL:
             LineCode=self.division,
             LineName=self.division,
             ProductionDate=dt.now().strftime("%Y-%m-%d %H:%M:%S"),
-            value=self.sum["factory"],
+            value=round(self.sum["factory"], 2),
             timestamp=dt.now().strftime("%Y-%m-%d %H:%M:%S"),
         )
         # print("topic: ", topic)
@@ -104,12 +103,12 @@ class Energy_ETL:
                 LineCode=m,
                 LineName=m,
                 ProductionDate=dt.now().strftime("%Y-%m-%d %H:%M:%S"),
-                value=manu[m],
+                value=round(manu[m], 2),
                 timestamp=dt.now().strftime("%Y-%m-%d %H:%M:%S"),
             )
             json_data = json.dumps(data.__dict__)
-            # print("topic: ", topic)
-            # print("data: ", json_data)
+            print("topic: ", topic)
+            print("data: ", json_data)
             self.pub_client.publish(topic=topic, payload=json_data)
         # print("•______________________________________________________________•")
 
@@ -127,12 +126,12 @@ class Energy_ETL:
                 LineCode=l,
                 LineName=master["lineCode"][l]["line_name"],
                 ProductionDate=dt.now().strftime("%Y-%m-%d %H:%M:%S"),
-                value=line[l],
+                value=round(line[l], 2),
                 timestamp=dt.now().strftime("%Y-%m-%d %H:%M:%S"),
             )
             json_data = json.dumps(data.__dict__)
-            # print("topic: ", topic)
-            # print("data: ", json_data)
+            print("topic: ", topic)
+            print("data: ", json_data)
             self.pub_client.publish(
                 topic=topic,
                 payload=json_data,

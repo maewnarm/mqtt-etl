@@ -1,7 +1,6 @@
 import random
 import os
 from paho.mqtt import client as mqtt_client
-from paho.mqtt.client import Client
 from rocketry import Rocketry
 from dotenv import dotenv_values
 
